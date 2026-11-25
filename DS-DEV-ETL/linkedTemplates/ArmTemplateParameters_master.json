@@ -1,0 +1,69 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "DS-DEV-ETL"
+		},
+		"ADLS_CSV_METADATA_accountKey": {
+			"value": ""
+		},
+		"DS_CSV_PARQUET_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_BLOB_CSV_ADLS_connectionString": {
+			"value": ""
+		},
+		"LS_BinaryText_connectionString": {
+			"value": ""
+		},
+		"LS_OUTPUT_BINARY_accountKey": {
+			"value": ""
+		},
+		"LS_SFTP_ADLS_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_SFTP_SINK_PARQ_accountKey": {
+			"value": ""
+		},
+		"LS_SQLServer_New_password": {
+			"value": ""
+		},
+		"LS_SQL_ADLS_accountKey": {
+			"value": ""
+		},
+		"ADLS_CSV_METADATA_properties_typeProperties_url": {
+			"value": "https://adlsdevraw01.dfs.core.windows.net/"
+		},
+		"DS_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdevstd01.dfs.core.windows.net/"
+		},
+		"LS_OUTPUT_BINARY_properties_typeProperties_url": {
+			"value": "https://adlsdevstd01.dfs.core.windows.net/"
+		},
+		"LS_SFTP_ADLS_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevraw01.dfs.core.windows.net/"
+		},
+		"LS_SFTP_SINK_PARQ_properties_typeProperties_url": {
+			"value": "https://adlsdevsrc01.dfs.core.windows.net/"
+		},
+		"LS_SQLServer_New_properties_typeProperties_server": {
+			"value": ".\\SQLEXPRESS"
+		},
+		"LS_SQLServer_New_properties_typeProperties_database": {
+			"value": "ADFproject"
+		},
+		"LS_SQLServer_New_properties_typeProperties_userName": {
+			"value": "davidsuriya"
+		},
+		"LS_SQL_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevsrc01.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}

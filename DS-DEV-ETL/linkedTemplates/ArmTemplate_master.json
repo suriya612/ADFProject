@@ -1,0 +1,188 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "DS-DEV-ETL"
+		},
+		"ADLS_CSV_METADATA_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ADLS_CSV_METADATA'"
+		},
+		"DS_CSV_PARQUET_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'DS_CSV_PARQUET_OUTPUT'"
+		},
+		"LS_BLOB_CSV_ADLS_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_BLOB_CSV_ADLS'"
+		},
+		"LS_BinaryText_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_BinaryText'"
+		},
+		"LS_OUTPUT_BINARY_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_OUTPUT_BINARY'"
+		},
+		"LS_SFTP_ADLS_PARQUET_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SFTP_ADLS_PARQUET'"
+		},
+		"LS_SFTP_SINK_PARQ_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SFTP_SINK_PARQ'"
+		},
+		"LS_SQLServer_New_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SQLServer_New'"
+		},
+		"LS_SQL_ADLS_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQL_ADLS'"
+		},
+		"ADLS_CSV_METADATA_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevraw01.dfs.core.windows.net/"
+		},
+		"DS_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevstd01.dfs.core.windows.net/"
+		},
+		"LS_OUTPUT_BINARY_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevstd01.dfs.core.windows.net/"
+		},
+		"LS_SFTP_ADLS_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevraw01.dfs.core.windows.net/"
+		},
+		"LS_SFTP_SINK_PARQ_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevsrc01.dfs.core.windows.net/"
+		},
+		"LS_SQLServer_New_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": ".\\SQLEXPRESS"
+		},
+		"LS_SQLServer_New_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "ADFproject"
+		},
+		"LS_SQLServer_New_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "davidsuriya"
+		},
+		"LS_SQL_ADLS_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevsrc01.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "DS-DEV-ETL_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"ADLS_CSV_METADATA_accountKey": {
+						"value": "[parameters('ADLS_CSV_METADATA_accountKey')]"
+					},
+					"DS_CSV_PARQUET_OUTPUT_accountKey": {
+						"value": "[parameters('DS_CSV_PARQUET_OUTPUT_accountKey')]"
+					},
+					"LS_BLOB_CSV_ADLS_connectionString": {
+						"value": "[parameters('LS_BLOB_CSV_ADLS_connectionString')]"
+					},
+					"LS_BinaryText_connectionString": {
+						"value": "[parameters('LS_BinaryText_connectionString')]"
+					},
+					"LS_OUTPUT_BINARY_accountKey": {
+						"value": "[parameters('LS_OUTPUT_BINARY_accountKey')]"
+					},
+					"LS_SFTP_ADLS_PARQUET_accountKey": {
+						"value": "[parameters('LS_SFTP_ADLS_PARQUET_accountKey')]"
+					},
+					"LS_SFTP_SINK_PARQ_accountKey": {
+						"value": "[parameters('LS_SFTP_SINK_PARQ_accountKey')]"
+					},
+					"LS_SQL_ADLS_accountKey": {
+						"value": "[parameters('LS_SQL_ADLS_accountKey')]"
+					},
+					"LS_SQLServer_New_password": {
+						"value": "[parameters('LS_SQLServer_New_password')]"
+					},
+					"ADLS_CSV_METADATA_properties_typeProperties_url": {
+						"value": "[parameters('ADLS_CSV_METADATA_properties_typeProperties_url')]"
+					},
+					"DS_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('DS_CSV_PARQUET_OUTPUT_properties_typeProperties_url')]"
+					},
+					"LS_OUTPUT_BINARY_properties_typeProperties_url": {
+						"value": "[parameters('LS_OUTPUT_BINARY_properties_typeProperties_url')]"
+					},
+					"LS_SFTP_ADLS_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('LS_SFTP_ADLS_PARQUET_properties_typeProperties_url')]"
+					},
+					"LS_SFTP_SINK_PARQ_properties_typeProperties_url": {
+						"value": "[parameters('LS_SFTP_SINK_PARQ_properties_typeProperties_url')]"
+					},
+					"LS_SQL_ADLS_properties_typeProperties_url": {
+						"value": "[parameters('LS_SQL_ADLS_properties_typeProperties_url')]"
+					},
+					"LS_SQLServer_New_properties_typeProperties_server": {
+						"value": "[parameters('LS_SQLServer_New_properties_typeProperties_server')]"
+					},
+					"LS_SQLServer_New_properties_typeProperties_database": {
+						"value": "[parameters('LS_SQLServer_New_properties_typeProperties_database')]"
+					},
+					"LS_SQLServer_New_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SQLServer_New_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "DS-DEV-ETL_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'DS-DEV-ETL_ArmTemplate_0')]"
+			]
+		}
+	]
+}
