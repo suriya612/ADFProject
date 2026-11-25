@@ -1,0 +1,21 @@
+{
+	"name": "LS_SQLServer_New",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": ".\\SQLEXPRESS",
+			"database": "ADFproject",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "davidsuriya",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmZmNlMjZmZi00OGViLTRhYTktYjVjNS03MTZiNDc5NDY1ZDciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "Selfhosted-integrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

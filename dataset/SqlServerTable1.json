@@ -1,0 +1,54 @@
+{
+	"name": "SqlServerTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLServer_New",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "\"product_id\"",
+				"type": "varchar"
+			},
+			{
+				"name": "\"product_category_name\"",
+				"type": "varchar"
+			},
+			{
+				"name": "\"product_name_lenght\"",
+				"type": "varchar"
+			},
+			{
+				"name": "\"product_description_lenght\"",
+				"type": "varchar"
+			},
+			{
+				"name": "\"product_photos_qty\"",
+				"type": "varchar"
+			},
+			{
+				"name": "\"product_weight_g\"",
+				"type": "varchar"
+			},
+			{
+				"name": "\"product_length_cm\"",
+				"type": "varchar"
+			},
+			{
+				"name": "\"product_height_cm\"",
+				"type": "varchar"
+			},
+			{
+				"name": "\"product_width_cm\"",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "olist_products_dataset"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,19 @@
+{
+	"name": "DS_BLOB_TXT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BinaryText",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "YOUTH SONGS SANG.txt",
+				"container": "input"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

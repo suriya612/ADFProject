@@ -1,0 +1,16 @@
+{
+	"name": "DS-DEV-ETL",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e762e9ab-c21f-4ce4-a0d3-53ba6a5d0b2b",
+		"tenantId": "aca38c11-c496-4b62-9d18-4fe109b8d304"
+	}
+}
