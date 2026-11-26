@@ -41,6 +41,18 @@
 		"LS_SQL_ADLS_accountKey": {
 			"value": ""
 		},
+		"LS_JSON_ADLS_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_JSON_ADLS_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_BULK_ADLS_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_BULK_ADLS_OUTPUT_accountKey": {
+			"value": ""
+		},
 		"ADLS_CSV_METADATA_properties_typeProperties_url": {
 			"value": "https://adlsdevraw01.dfs.core.windows.net/"
 		},
@@ -78,6 +90,18 @@
 			"value": "davidsuriya"
 		},
 		"LS_SQL_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevsrc01.dfs.core.windows.net/"
+		},
+		"LS_JSON_ADLS_INPUT_properties_typeProperties_url": {
+			"value": "https://adlsdevraw01.dfs.core.windows.net/"
+		},
+		"LS_JSON_ADLS_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdevsrc01.dfs.core.windows.net/"
+		},
+		"LS_BULK_ADLS_INPUT_properties_typeProperties_url": {
+			"value": "https://adlsdevraw01.dfs.core.windows.net/"
+		},
+		"LS_BULK_ADLS_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlsdevsrc01.dfs.core.windows.net/"
 		}
 	}
