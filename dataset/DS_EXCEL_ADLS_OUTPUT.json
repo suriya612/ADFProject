@@ -1,0 +1,19 @@
+{
+	"name": "DS_EXCEL_ADLS_OUTPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_EXCEL_ADLS_OUTPUT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
