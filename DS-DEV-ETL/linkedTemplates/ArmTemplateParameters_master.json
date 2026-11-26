@@ -26,6 +26,9 @@
 		"LS_SFTP_SINK_PARQ_accountKey": {
 			"value": ""
 		},
+		"LS_SNOWFLAKE_ADLS_accountKey": {
+			"value": ""
+		},
 		"LS_SQLServer_New_password": {
 			"value": ""
 		},
@@ -41,10 +44,16 @@
 		"LS_OUTPUT_BINARY_properties_typeProperties_url": {
 			"value": "https://adlsdevstd01.dfs.core.windows.net/"
 		},
+		"LS_RESTAPI_PARQUET_properties_typeProperties_url": {
+			"value": "https://cd245fa4419861032864.free.beeceptor.com/api/product-category-name-translation"
+		},
 		"LS_SFTP_ADLS_PARQUET_properties_typeProperties_url": {
 			"value": "https://adlsdevraw01.dfs.core.windows.net/"
 		},
 		"LS_SFTP_SINK_PARQ_properties_typeProperties_url": {
+			"value": "https://adlsdevsrc01.dfs.core.windows.net/"
+		},
+		"LS_SNOWFLAKE_ADLS_properties_typeProperties_url": {
 			"value": "https://adlsdevsrc01.dfs.core.windows.net/"
 		},
 		"LS_SQLServer_New_properties_typeProperties_server": {
