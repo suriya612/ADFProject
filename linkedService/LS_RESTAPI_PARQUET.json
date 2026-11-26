@@ -1,0 +1,12 @@
+{
+	"name": "LS_RESTAPI_PARQUET",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://cd245fa4419861032864.free.beeceptor.com/api/product-category-name-translation",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
