@@ -1,0 +1,100 @@
+{
+	"name": "DS_BULK_ADLS_OUTPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BULK_ADLS_OUTPUT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "index",
+				"type": "INT64"
+			},
+			{
+				"name": "guid",
+				"type": "UTF8"
+			},
+			{
+				"name": "isActive",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "balance",
+				"type": "UTF8"
+			},
+			{
+				"name": "picture",
+				"type": "UTF8"
+			},
+			{
+				"name": "age",
+				"type": "INT64"
+			},
+			{
+				"name": "eyeColor",
+				"type": "UTF8"
+			},
+			{
+				"name": "name",
+				"type": "UTF8"
+			},
+			{
+				"name": "gender",
+				"type": "UTF8"
+			},
+			{
+				"name": "company",
+				"type": "UTF8"
+			},
+			{
+				"name": "email",
+				"type": "UTF8"
+			},
+			{
+				"name": "phone",
+				"type": "UTF8"
+			},
+			{
+				"name": "address",
+				"type": "UTF8"
+			},
+			{
+				"name": "about",
+				"type": "UTF8"
+			},
+			{
+				"name": "registered",
+				"type": "UTF8"
+			},
+			{
+				"name": "latitude",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "longitude",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "greeting",
+				"type": "UTF8"
+			},
+			{
+				"name": "favoriteFruit",
+				"type": "UTF8"
+			}
+		]
+	}
+}
