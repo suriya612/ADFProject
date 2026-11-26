@@ -17,6 +17,12 @@
 		"LS_BinaryText_connectionString": {
 			"value": ""
 		},
+		"LS_EXCEL_ADLS_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_EXCEL_ADLS_OUTPUT_accountKey": {
+			"value": ""
+		},
 		"LS_OUTPUT_BINARY_accountKey": {
 			"value": ""
 		},
@@ -40,6 +46,12 @@
 		},
 		"DS_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlsdevstd01.dfs.core.windows.net/"
+		},
+		"LS_EXCEL_ADLS_INPUT_properties_typeProperties_url": {
+			"value": "https://adlsdevraw01.dfs.core.windows.net/"
+		},
+		"LS_EXCEL_ADLS_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdevsrc01.dfs.core.windows.net/"
 		},
 		"LS_OUTPUT_BINARY_properties_typeProperties_url": {
 			"value": "https://adlsdevstd01.dfs.core.windows.net/"
