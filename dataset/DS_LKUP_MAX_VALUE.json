@@ -2,17 +2,21 @@
 	"name": "DS_LKUP_MAX_VALUE",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_SQL_MIGRATION",
+			"referenceName": "LS_LKUP_MAX_VALUE",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"schemaname": {
-				"type": "string",
-				"defaultValue": "@pipeline().paremeters.TableSchema"
+			"TableSchema": {
+				"type": "string"
 			},
-			"tablename": {
-				"type": "string",
-				"defaultValue": "@pipeline().paremeters.TableName"
+			"TableName": {
+				"type": "string"
+			},
+			"WatermarkColumn": {
+				"type": "string"
+			},
+			"LastLoadValue": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
