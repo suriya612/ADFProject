@@ -7,16 +7,20 @@
 		},
 		"parameters": {
 			"TableSchema": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.TableSchema"
 			},
 			"TableName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.TableName"
 			},
 			"WatermarkColumn": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.WatermarkColumn"
 			},
 			"LastLoadValue": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.LastLoadValue"
 			}
 		},
 		"annotations": [],
