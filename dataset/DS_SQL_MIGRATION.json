@@ -5,16 +5,6 @@
 			"referenceName": "LS_SQL_MIGRATION",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"schemaname": {
-				"type": "string",
-				"defaultValue": "@pipeline().paremeters.TableSchema"
-			},
-			"tablename": {
-				"type": "string",
-				"defaultValue": "@pipeline().paremeters.TableName"
-			}
-		},
 		"annotations": [],
 		"type": "SqlServerTable",
 		"schema": []
