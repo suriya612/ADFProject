@@ -5,6 +5,11 @@
 			"referenceName": "LS_SQL_ADLS",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Table_Name": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
