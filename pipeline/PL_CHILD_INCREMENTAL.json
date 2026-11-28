@@ -169,7 +169,7 @@
 				"type": "string"
 			},
 			"LastLoadValue": {
-				"type": "string"
+				"type": "int"
 			}
 		},
 		"annotations": []
