@@ -52,7 +52,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@greater(\n    int(activity('LKUP_MAX_VALUE').output.firstRow.MaxValue),\n    1000\n)\n\n",
+						"value": "@greater(\r\n    int(activity('LKUP_MAX_VALUE').output.firstRow.MaxValue),\r\n    int(pipeline().parameters.LastLoadValue)\r\n)\r\n",
 						"type": "Expression"
 					},
 					"ifTrueActivities": [
